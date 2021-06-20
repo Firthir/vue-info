@@ -1,10 +1,11 @@
 {
-    "name": "vue-hello-world-simple",
-    "description": "A simple vuejs Tooltip plugin",
+    "name": "vue-info",
+    "description": "A simple vue js tooltip plugin",
     "version": "0.1.0",
     "private": false,
     "author": {
-        "name": "Alex Frith"
+        "name": "Alex Frith",
+        "email": "alex@frithir.com"
     },
     "repository": "https://github.com/Firthir/vue-info",
     "bugs": "https://github.com/Firthir/vue-info",
@@ -17,7 +18,7 @@
     "files": [
         "dist"
     ],
-    "main": ".dist/vue-hello-world-simple.common.js",
+    "main": ".dist/vue-info.common.js",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
