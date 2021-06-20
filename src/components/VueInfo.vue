@@ -61,9 +61,6 @@ export default {
 </script>
 
 <style>
-.space {
-    padding: 100px;
-}
 .v-info {
     position: relative;
     display: inline-block;
@@ -79,11 +76,13 @@ export default {
     color: #fff;
     text-align: center;
     padding: 5px;
-    border-radius: 6px;
     position: absolute;
     z-index: 1;
     font-size: 9px;
     letter-spacing: 0.8px;
+}
+.v-info--rounded {
+    border-radius: 6px;
 }
 .v-info--white .v-info--text {
     background-color: rgba(55, 65, 81, 1);
