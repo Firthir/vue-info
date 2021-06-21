@@ -32,7 +32,7 @@
             <VueInfo class="space--item" info="Tooltip white" color="white">
                 <a href="https://firthir.github.io/vue-info/">Link with white info</a>
             </VueInfo>
-            <VueInfo class="space--item" info="Tooltip right" color="red">
+            <VueInfo class="space--item" info="Tooltip red" color="red">
                 <a href="https://firthir.github.io/vue-info/">Link with red info</a>
             </VueInfo>
         </div>
