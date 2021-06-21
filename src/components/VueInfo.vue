@@ -53,6 +53,8 @@ export default {
     line-height: 1;
 }
 .v-info .v-info--text {
+    visibility: hidden;
+    opacity: 0;
     white-space: nowrap;
     border: 1px solid;
     text-align: center;
