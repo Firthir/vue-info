@@ -50,24 +50,24 @@
         <h3>How to configure / customize this plugin</h3>
         <ul>
             <li>
-                Wrap the button or link add as child of vue-info component - Accepts single html element or a component<br />
+                Wrap the button or link add as child of <strong>vue-info</strong> component - Accepts single html element or a component<br />
                 required
             </li>
             <li>
-                info="Tooltip info message or dresription" <br />
+                <strong>info</strong>="Tooltip info message or dresription" <br />
                 required
             </li>
             <li>
-                color="choose one -> 'black', 'white', 'red'" <br />
+                <strong>color</strong>="choose one -> 'black', 'white', 'red'" <br />
                 default white text black background.
             </li>
             <li>
-                position="choose one -> 'left', 'right', 'top', 'bottom'" <br />
+                <strong>position</strong>="choose one -> 'left', 'right', 'top', 'bottom'" <br />
                 default top
             </li>
             <li>
-                square="true/false" <br />
-                default true
+                <strong>Square</strong>="true/false" <br />
+                default false, rounded by 6px
             </li>
         </ul>
     </div>

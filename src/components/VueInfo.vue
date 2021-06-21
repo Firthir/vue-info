@@ -1,8 +1,5 @@
 <template>
     <div
-        @click="show = !show"
-        @mouseenter="show = true"
-        @mouseleave="show = false"
         :class="[
             'v-info',
             `v-info--${color}`,
@@ -45,13 +42,6 @@ export default {
             type: Boolean,
             default: false,
         },
-    },
-    data() {
-        return {
-            show: false,
-            xPosition: 0,
-            yPosition: 0,
-        };
     },
 };
 </script>

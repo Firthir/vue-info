@@ -18,4 +18,4 @@ Need a simple tooltip on hover for any action buttons, links, text and more, pro
 -   position="choose one -> 'left', 'right', 'top', 'bottom'"  
     default top
 -   square="true/false"  
-    default true
+    default false, rounded by 6px
