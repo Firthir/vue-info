@@ -1,6 +1,6 @@
-# Welcome to Vue Info Tooltip plugin
+# Welcome to Vue Info a tooltip plugin for VueJs 2
 
-Need a simple tooltip on hover for action buttons and links to add better UX.
+Need a simple tooltip on hover for any action buttons, links, text and more, provide a to better UX to your project.
 
 ### Install
 
@@ -9,15 +9,13 @@ Need a simple tooltip on hover for action buttons and links to add better UX.
 
 ### How to configure / customize this plugin
 
--   Wrap the button or link add as child of `vue-info` component - Accepts single html element or a component  
+-   Wrap the button or link add as child of vue-info component - Accepts single html element or a component  
     required
 -   info="Tooltip info message or dresription"  
     required
--   color="choose one -> 'white', 'black', 'red'"  
+-   color="choose one -> 'black', 'white', 'red'"  
     default white text black background.
 -   position="choose one -> 'left', 'right', 'top', 'bottom'"  
     default top
--   rounded="true/false"  
-    default true
--   hover="true/false"  
+-   square="true/false"  
     default true
