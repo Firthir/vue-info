@@ -1,17 +1,19 @@
 <template>
     <div
         @click="show = !show"
+        @mouseenter="show = true"
+        @mouseleave="show = false"
         :class="[
             'v-info',
             `v-info--${color}`,
             `v-info--${position}`,
             {
-                'v-info--rounded': rounded,
+                'v-info--square': square,
             },
         ]"
     >
         <slot></slot>
-        <div class="v-info--text">
+        <div v-if="show" class="v-info--text">
             {{ info }}
         </div>
     </div>
@@ -27,9 +29,9 @@ export default {
         },
         color: {
             type: String,
-            default: 'white',
+            default: 'black',
             validator(x) {
-                return ['white', 'black', 'red'].indexOf(x) !== -1;
+                return ['black', 'white', 'red'].indexOf(x) !== -1;
             },
         },
         position: {
@@ -39,15 +41,7 @@ export default {
                 return ['left', 'right', 'top', 'bottom'].indexOf(x) !== -1;
             },
         },
-        rounded: {
-            type: Boolean,
-            default: true,
-        },
-        hover: {
-            type: Boolean,
-            default: true,
-        },
-        click: {
+        square: {
             type: Boolean,
             default: false,
         },
@@ -55,6 +49,8 @@ export default {
     data() {
         return {
             show: false,
+            xPosition: 0,
+            yPosition: 0,
         };
     },
 };
@@ -70,117 +66,147 @@ export default {
     visibility: hidden;
     opacity: 0;
     white-space: nowrap;
-    background-color: rgba(55, 65, 81, 1);
     border: 1px solid;
-    border-color: #fff;
-    color: #fff;
     text-align: center;
     padding: 5px;
     position: absolute;
-    z-index: 1;
     font-size: 9px;
     letter-spacing: 0.8px;
-}
-.v-info--rounded {
     border-radius: 6px;
 }
-.v-info--white .v-info--text {
+/* Square */
+.v-info--square .v-info--text {
+    border-radius: 0;
+}
+/* Colors */
+.v-info--black .v-info--text {
     background-color: rgba(55, 65, 81, 1);
     color: #fff;
-}
-.v-info--black .v-info--text {
-    background-color: white;
-    color: rgba(55, 65, 81, 1);
     border-color: rgba(55, 65, 81, 1);
 }
-.v-info--red .v-info--text {
-    background-color: white;
-    border-color: rgba(220, 38, 38, 1);
-    color: rgba(220, 38, 38, 1);
+.v-info--black.v-info--right .v-info--text:after {
+    border-color: transparent rgba(55, 65, 81, 1) transparent transparent;
 }
+.v-info--black.v-info--left .v-info--text:after {
+    border-color: transparent transparent transparent rgba(55, 65, 81, 1);
+}
+.v-info--black.v-info--top .v-info--text:after {
+    border-color: rgba(55, 65, 81, 1) transparent transparent transparent;
+}
+.v-info--black.v-info--bottom .v-info--text:after {
+    border-color: transparent transparent rgba(55, 65, 81, 1) transparent;
+}
+.v-info--white .v-info--text {
+    background-color: white;
+    color: rgba(55, 65, 81, 1);
+    border-color: white;
+}
+.v-info--white.v-info--right .v-info--text:after {
+    border-color: transparent white transparent transparent;
+}
+.v-info--white.v-info--left .v-info--text:after {
+    border-color: transparent transparent transparent white;
+}
+.v-info--white.v-info--top .v-info--text:after {
+    border-color: white transparent transparent transparent;
+}
+.v-info--white.v-info--bottom .v-info--text:after {
+    border-color: transparent transparent white transparent;
+}
+.v-info--red .v-info--text {
+    background-color: rgba(220, 38, 38, 1);
+    border-color: rgba(220, 38, 38, 1);
+    color: white;
+}
+.v-info--red.v-info--right .v-info--text:after {
+    border-color: transparent rgba(220, 38, 38, 1) transparent transparent;
+}
+.v-info--red.v-info--left .v-info--text:after {
+    border-color: transparent transparent transparent rgba(220, 38, 38, 1);
+}
+.v-info--red.v-info--top .v-info--text:after {
+    border-color: rgba(220, 38, 38, 1) transparent transparent transparent;
+}
+.v-info--red.v-info--bottom .v-info--text:after {
+    border-color: transparent transparent rgba(220, 38, 38, 1) transparent;
+}
+/* Positions */
 .v-info--right .v-info--text {
-    top: -5px;
-    left: 115%;
+    top: 5px;
+    left: 100%;
 }
 .v-info--right .v-info--text:after {
     content: ' ';
     position: absolute;
     top: 50%;
-    right: 100%; /* To the left of the tooltip */
+    right: 100%;
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent rgba(55, 65, 81, 1) transparent transparent;
 }
 .v-info--left .v-info--text {
-    top: -5px;
-    right: 115%;
+    top: 5px;
+    right: 100%;
 }
 .v-info--left .v-info--text:after {
     content: ' ';
     position: absolute;
     top: 50%;
-    left: 100%; /* To the right of the tooltip */
+    left: 100%;
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent transparent rgba(55, 65, 81, 1);
 }
-
 .v-info--top .v-info--text {
-    bottom: 115%;
+    bottom: 105%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 .v-info--top .v-info--text:after {
     content: ' ';
     position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
+    top: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgba(55, 65, 81, 1) transparent transparent transparent;
 }
-
 .v-info--bottom .v-info--text {
-    top: 115%;
+    top: 105%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 .v-info--bottom .v-info--text:after {
     content: ' ';
     position: absolute;
-    bottom: 100%; /* At the top of the tooltip */
+    bottom: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent rgba(55, 65, 81, 1) transparent;
 }
-
+/* Amination */
+.v-info--top .v-info--text:after {
+    transition: all 0.1s ease-in-out;
+    transform: translate3d(0, -6px, -1);
+}
+.v-info--bottom .v-info--text:after {
+    transition: all 0.1s ease-in-out;
+    transform: translate3d(0, 6px, -1);
+}
+.v-info--right .v-info--text:after {
+    transition: all 0.1s ease-in-out;
+    transform: translate3d(6px, 0, -1);
+}
+.v-info--left .v-info--text:after {
+    transition: all 0.1s ease-in-out;
+    transform: translate3d(-6px, 0, -1);
+}
+/* Hover */
 .v-info:hover .v-info--text {
     visibility: visible;
     opacity: 1;
 }
-
-.v-info--top .v-info--text:after {
-    transition: all 0.1s ease-in-out;
-    transform: translate3d(0, -6px, 0);
-}
-.v-info--bottom .v-info--text:after {
-    transition: all 0.1s ease-in-out;
-    transform: translate3d(0, 6px, 0);
-}
-.v-info--right .v-info--text:after {
-    transition: all 0.1s ease-in-out;
-    transform: translate3d(6px, 0, 0);
-}
-.v-info--left .v-info--text:after {
-    transition: all 0.1s ease-in-out;
-    transform: translate3d(-6px, 0, 0);
-}
-
 .v-info:hover .v-info--text:after {
     opacity: 1;
     transform: scale3d(1, 1, 1);
