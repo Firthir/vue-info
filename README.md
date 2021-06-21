@@ -4,7 +4,7 @@ Need a simple tooltip on hover for any action buttons, links, text and more, pro
 
 ## [Demo site](https://vue-info.netlify.app/)
 
-[![Demo](https://vue-info.netlify.app/demo.png)](https://vue-info.netlify.app/)
+[![Demo](https://vue-info.netlify.app/demoImage.png)](https://vue-info.netlify.app/)
 
 ### Install
 
