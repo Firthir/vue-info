@@ -2,6 +2,8 @@
 
 Need a simple tooltip on hover for any action buttons, links, text and more, provide a better UX to your project.
 
+[![Demo](https://vue-info.netlify.app/demo.png)](https://vue-info.netlify.app/)
+
 ### Install
 
 -   `npm install vue-info`
