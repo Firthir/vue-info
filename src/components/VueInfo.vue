@@ -10,7 +10,7 @@
         ]"
     >
         <slot></slot>
-        <div v-if="show" class="v-info--text">
+        <div class="v-info--text">
             {{ info }}
         </div>
     </div>
