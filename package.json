@@ -15,6 +15,9 @@
         "Easy to set up"
     ],
     "license": "MIT",
+    "files": [
+        "dist"
+    ],
     "main": ".dist/vue-info.common.js",
     "scripts": {
         "serve": "vue-cli-service serve",
