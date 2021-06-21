@@ -1,7 +1,7 @@
 {
     "name": "vue-info",
     "description": "A simple vue js tooltip plugin",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "private": false,
     "author": {
         "name": "Alex Frith",
