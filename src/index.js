@@ -1,13 +1,7 @@
-import LoadVueInfo from './components/VueInfo.vue';
+import VueInfo from './components/VueInfo.vue';
 
-const VueInfo = {
+export default {
     install(Vue) {
-        Vue.component('vue-info', LoadVueInfo);
+        Vue.component('vue-info', VueInfo);
     },
 };
-
-if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(VueInfo);
-}
-
-export default VueInfo;
