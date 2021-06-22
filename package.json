@@ -17,12 +17,12 @@
     "files": [
         "dist/*"
     ],
-    "main": ".dist/vue-info.common.js",
+    "main": ".dist/index.js",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
-        "build-library": "vue-cli-service build --target lib --name vue-info ./src/install.js"
+        "build-library": "vue-cli-service build --target lib --name vue-info ./src/index.js"
     },
     "dependencies": {
         "core-js": "^3.6.5",
