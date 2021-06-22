@@ -18,6 +18,7 @@
 
 <script>
 export default {
+    name: 'vueInfo',
     props: {
         info: {
             type: String,
