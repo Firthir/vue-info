@@ -1,7 +1,7 @@
 {
     "name": "vue-info",
     "description": "A simple vue js tooltip plugin",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "private": false,
     "author": {
         "name": "Alex Frith",
@@ -11,12 +11,11 @@
     "bugs": "https://github.com/Firthir/vue-info",
     "keywords": [
         "Tooltip",
-        "Vue2",
-        "Easy to set up"
+        "Vue2"
     ],
     "license": "MIT",
     "files": [
-        "dist"
+        "dist/*"
     ],
     "main": ".dist/vue-info.common.js",
     "scripts": {
