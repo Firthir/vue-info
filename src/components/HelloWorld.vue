@@ -14,26 +14,26 @@
 
         <div class="space">
             <VueInfo class="space--item" info="Tooltip top">
-                <a href="https://firthir.github.io/vue-info/">Link with top info</a>
+                <a href="https://github.com/Firthir/vue-info">Link with top info</a>
             </VueInfo>
             <VueInfo class="space--item" info="Tooltip bottom" position="bottom">
-                <a href="https://firthir.github.io/vue-info/">Link with bottom info</a>
+                <a href="https://github.com/Firthir/vue-info">Link with bottom info</a>
             </VueInfo>
         </div>
         <div class="space">
             <VueInfo class="space--item space--left" info="Tooltip left" position="left">
-                <a href="https://firthir.github.io/vue-info/">Link with left info</a>
+                <a href="https://github.com/Firthir/vue-info">Link with left info</a>
             </VueInfo>
             <VueInfo class="space--item space--right" info="Tooltip right" position="right">
-                <a href="https://firthir.github.io/vue-info/">Link with right info</a>
+                <a href="https://github.com/Firthir/vue-info">Link with right info</a>
             </VueInfo>
         </div>
         <div class="space">
             <VueInfo class="space--item" info="Tooltip white" color="white">
-                <a href="https://firthir.github.io/vue-info/">Link with white info</a>
+                <a href="https://github.com/Firthir/vue-info">Link with white info</a>
             </VueInfo>
             <VueInfo class="space--item" info="Tooltip red" color="red">
-                <a href="https://firthir.github.io/vue-info/">Link with red info</a>
+                <a href="https://github.com/Firthir/vue-info">Link with red info</a>
             </VueInfo>
         </div>
         <div class="space">
