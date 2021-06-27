@@ -81,24 +81,21 @@
                 <em>Required</em><br />
 
                 <code>
-                import VueInfo from 'vue-info';
-                export default {
-                    ...
-                    components: {
-                        ...
-                        VueInfo,
-                    },
-                    ...
-                };
+                    <pre>
+                import VueInfo from 'vue-info';<br />
+                export default {<br />
+                    ...<br />
+                    components: {<br />
+                        ...<br />
+                        VueInfo,<br />
+                    },<br />
+                    ...<br />
+                };<br />
+                    </pre>
                 </code>
 
                 Then add it to your template
 
-                <code>
-                    <VueInfo>
-                        <a href="https://vue-info.netlify.app/">vue-info documentation</a>
-                    </VueInfo>
-                <code>
 
             </li>
             <li>
