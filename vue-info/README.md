@@ -31,7 +31,7 @@ Need a simple tooltip on hover for any action buttons, links, text and more, pro
     Then add it to your template
 
     ```
-    <VueInfo>
+    <VueInfo info="Demo Vue Info" >
         <a href="https://vue-info.netlify.app/">vue-info documentation</a>
     </VueInfo>
     ```
