@@ -14,7 +14,7 @@ Need a simple tooltip on hover for any action buttons, links, text and more, pro
 ### How to configure / customize this plugin
 
 -   Wrap the button or link add as child of vue-info component - Accepts single html element or a component  
-    required
+    _Required_
 
     ```
     import VueInfo from 'vue-info';
@@ -28,7 +28,7 @@ Need a simple tooltip on hover for any action buttons, links, text and more, pro
     };
     ```
 
-    add it to your template
+    Then add it to your template
 
     ```
     <VueInfo>
@@ -37,7 +37,7 @@ Need a simple tooltip on hover for any action buttons, links, text and more, pro
     ```
 
 -   info="Tooltip info message or dresription"  
-    required
+    _Required_
 -   color="choose one -> 'black', 'white', 'red'"  
     default white text black background.
 -   position="choose one -> 'left', 'right', 'top', 'bottom'"  
