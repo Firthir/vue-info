@@ -78,19 +78,33 @@
                 Wrap the button or link add as child of
                 <strong>vue-info</strong> component - Accepts single html
                 element or a component<br />
-                required<br />
-                import VueInfo from 'vue-info'; export default { ... components:
-                { ... VueInfo, }, ... }; add it to your template
-                <VueInfo>
-                    <a href="https://vue-info.netlify.app/"
-                        >vue-info documentation</a
-                    >
-                </VueInfo>
+                <em>Required</em><br />
+
+                <code>
+                import VueInfo from 'vue-info';
+                export default {
+                    ...
+                    components: {
+                        ...
+                        VueInfo,
+                    },
+                    ...
+                };
+                </code>
+
+                Then add it to your template
+
+                <code>
+                    <VueInfo>
+                        <a href="https://vue-info.netlify.app/">vue-info documentation</a>
+                    </VueInfo>
+                <code>
+
             </li>
             <li>
                 <strong>info</strong>="Tooltip info message or dresription"
                 <br />
-                required
+                <em>Required</em><br />
             </li>
             <li>
                 <strong>color</strong>="choose one -> 'black', 'white', 'red'"
