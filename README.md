@@ -15,14 +15,27 @@ Need a simple tooltip on hover for any action buttons, links, text and more, pro
 
 -   Wrap the button or link add as child of vue-info component - Accepts single html element or a component  
     required
+
+    ```
     import VueInfo from 'vue-info';
-    ````export default { ... components:
-    { ... VueInfo, }, ... };
-     add it to your template
+    export default {
+        ...
+        components: {
+            ...
+            VueInfo,
+        },
+         ...
+    };
+    ```
+
+    add it to your template
+
+    ```
     <VueInfo>
-    <a href="https://vue-info.netlify.app/">vue-info documentation</a>
-    </VueInfo>```
-    ````
+        <a href="https://vue-info.netlify.app/">vue-info documentation</a>
+    </VueInfo>
+    ```
+
 -   info="Tooltip info message or dresription"  
     required
 -   color="choose one -> 'black', 'white', 'red'"  
