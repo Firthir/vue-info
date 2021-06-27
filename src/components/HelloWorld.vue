@@ -7,33 +7,58 @@
             <div class="intro">
                 <h1>Welcome to Vue Info a tooltip plugin for VueJs 2</h1>
                 <p>
-                    Need a simple tooltip on hover for any action buttons, links, text and more, provide a better UX to your project.
+                    Need a simple tooltip on hover for any action buttons,
+                    links, text and more, provide a better UX to your project.
                 </p>
             </div>
         </div>
 
         <div class="space">
             <VueInfo class="space--item" info="Tooltip top">
-                <a href="https://firthir.github.io/vue-info/">Link with top info</a>
+                <a href="https://firthir.github.io/vue-info/"
+                    >Link with top info</a
+                >
             </VueInfo>
-            <VueInfo class="space--item" info="Tooltip bottom" position="bottom">
-                <a href="https://firthir.github.io/vue-info/">Link with bottom info</a>
+            <VueInfo
+                class="space--item"
+                info="Tooltip bottom"
+                position="bottom"
+            >
+                <a href="https://firthir.github.io/vue-info/"
+                    >Link with bottom info</a
+                >
             </VueInfo>
         </div>
         <div class="space">
-            <VueInfo class="space--item space--left" info="Tooltip left" position="left">
-                <a href="https://firthir.github.io/vue-info/">Link with left info</a>
+            <VueInfo
+                class="space--item space--left"
+                info="Tooltip left"
+                position="left"
+            >
+                <a href="https://firthir.github.io/vue-info/"
+                    >Link with left info</a
+                >
             </VueInfo>
-            <VueInfo class="space--item space--right" info="Tooltip right" position="right">
-                <a href="https://firthir.github.io/vue-info/">Link with right info</a>
+            <VueInfo
+                class="space--item space--right"
+                info="Tooltip right"
+                position="right"
+            >
+                <a href="https://firthir.github.io/vue-info/"
+                    >Link with right info</a
+                >
             </VueInfo>
         </div>
         <div class="space">
             <VueInfo class="space--item" info="Tooltip white" color="white">
-                <a href="https://firthir.github.io/vue-info/">Link with white info</a>
+                <a href="https://firthir.github.io/vue-info/"
+                    >Link with white info</a
+                >
             </VueInfo>
             <VueInfo class="space--item" info="Tooltip red" color="red">
-                <a href="https://firthir.github.io/vue-info/">Link with red info</a>
+                <a href="https://firthir.github.io/vue-info/"
+                    >Link with red info</a
+                >
             </VueInfo>
         </div>
         <div class="space">
@@ -50,19 +75,31 @@
         <h3>How to configure / customize this plugin</h3>
         <ul>
             <li>
-                Wrap the button or link add as child of <strong>vue-info</strong> component - Accepts single html element or a component<br />
+                Wrap the button or link add as child of
+                <strong>vue-info</strong> component - Accepts single html
+                element or a component<br />
+                required<br />
+                import VueInfo from 'vue-info'; export default { ... components:
+                { ... VueInfo, }, ... }; add it to your template
+                <VueInfo>
+                    <a href="https://vue-info.netlify.app/"
+                        >vue-info documentation</a
+                    >
+                </VueInfo>
+            </li>
+            <li>
+                <strong>info</strong>="Tooltip info message or dresription"
+                <br />
                 required
             </li>
             <li>
-                <strong>info</strong>="Tooltip info message or dresription" <br />
-                required
-            </li>
-            <li>
-                <strong>color</strong>="choose one -> 'black', 'white', 'red'" <br />
+                <strong>color</strong>="choose one -> 'black', 'white', 'red'"
+                <br />
                 default white text black background.
             </li>
             <li>
-                <strong>position</strong>="choose one -> 'left', 'right', 'top', 'bottom'" <br />
+                <strong>position</strong>="choose one -> 'left', 'right', 'top',
+                'bottom'" <br />
                 default top
             </li>
             <li>

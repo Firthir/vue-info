@@ -1,7 +1,7 @@
 {
     "name": "vue-info",
     "description": "A simple vue js tooltip plugin",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "private": false,
     "author": {
         "name": "Alex Frith",
@@ -14,10 +14,14 @@
         "Vue2"
     ],
     "license": "MIT",
+    "main": "dist/vue-info.ssr.js",
+    "browser": "dist/vue-info.esm.js",
+    "module": "dist/vue-info.esm.js",
+    "unpkg": "dist/vue-info.min.js",
     "files": [
-        "dist/*"
+        "dist/*",
+        "src/**/*.vue"
     ],
-    "main": ".dist/index.js",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
