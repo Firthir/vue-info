@@ -51,6 +51,7 @@ export default {
 body {
     background-color: #abe9cd;
     background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    min-height: 100vh;
 }
 
 .GithubCorner {
